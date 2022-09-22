@@ -1,6 +1,16 @@
 import java.io.FileInputStream
 import java.util.*
 
+//Что-то я наколхозил, думаю можно было сделать проще через регулярные, но об этом я только потом подумал)
+
+fun check(arrI: String, arrText: String, index: String): Boolean {
+    if ( arrText.indexOf(":") > 0 &&
+        arrI.indexOf(index) > 0 &&
+        arrText.substring(3,arrText.indexOf(":")+1).startsWith(arrI.substring(0,arrI.indexOf(index))))
+                return true
+    else return false
+}
+
 fun main() {
     val sc = Scanner(FileInputStream("roles.txt"))
 
@@ -27,12 +37,10 @@ fun main() {
         arr[i][0] = roles[i]
 
     }
-   for (i in 0..roles.size-1 ){
-       for (j in 0..textLines.size-1 ){
-            if (textLines[j].substring(3,textLines[j].indexOf(":")+1).startsWith(arr[i][0]) || (arr[i][0].indexOf(" ")) > 0 &&
-                textLines[j].substring(3,textLines[j].indexOf(":")+1).startsWith(arr[i][0].substring(0,arr[i][0].indexOf(" ")))) {
+    for (i in 0..roles.size-1 ){
+        for (j in 0..textLines.size-1 ){
+            if (check(arr[i][0],textLines[j], " " ) || check(arr[i][0],textLines[j], ":" ))
                 arr[i][j + 1] = textLines[j]
-            }
 
         }
 
@@ -41,7 +49,7 @@ fun main() {
     for (array in arr) {
         for (value in array) {
             if (value != "0")
-            println(value)
+                println(value)
         }
         println()
     }
