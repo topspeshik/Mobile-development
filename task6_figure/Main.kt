@@ -1,7 +1,7 @@
 fun main() {
 
 
-    val newRect = Rect(8, -1, 1,2)
+    val newRect = Rect(4, -2, 1,2)
     println("Rectangle: $newRect")
     newRect.rotate(RotateDirection.Clockwise, 0, 0)
     println("Clockwise rotate with center (0,0): $newRect")
@@ -10,7 +10,7 @@ fun main() {
 
     println("-----------------------")
 
-    val newSquare = Square(8, -1, 4)
+    val newSquare = Square(4, -2, 4)
     println("Square: $newSquare")
     newSquare.rotate(RotateDirection.Clockwise, 2, 2)
     println("Clockwise rotate with center (2,2): $newSquare")
