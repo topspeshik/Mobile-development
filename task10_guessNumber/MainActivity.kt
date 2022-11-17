@@ -9,13 +9,10 @@ import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var movies:  ArrayList<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        movies = resources.getStringArray(R.array.movies).toCollection(ArrayList())
 
 
         buttonGo.setOnClickListener{
