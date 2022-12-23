@@ -1,1 +1,1 @@
-![alt text](img/weather.img)
+![alt text](img/weather.jpg)
