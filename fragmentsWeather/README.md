@@ -1,2 +1,2 @@
-!(img1.jpg)
-!(img2.jpg)
+![alt text](img1.jpg)
+![alt text](img2.jpg)
