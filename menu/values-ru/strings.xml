@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">weatherRecycler</string>
+    <string name="API_KEY">0648cfde6891ed9b82c23f4a5addf3e6</string>
+    <string name="click">click</string>
+    <string name="city">Город</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="english">Английский</string>
+    <string name="simple_weather_app">Простое приложение погоды</string>
+    <string name="search_for_a_city">Поиск города</string>
+    <string name="submit">Отправить</string>
+    <string name="temp">Температура</string>
+    <string name="feelLike">Ощущается как</string>
+    <string name="temp_max">Макс температура</string>
+    <string name="temp_min">Мин температура</string>
+    <string name="humidity">Влажность</string>
+    <string name="pressure">Давление</string>
+    <string name="russian">Русский</string>
+</resources>
